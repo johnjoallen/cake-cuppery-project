@@ -1,0 +1,75 @@
+.infiniteCarousel {
+  width: 994px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+
+.infiniteCarousel .wrapper {
+  width: 890px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+  overflow: auto;
+  min-height: 15em;
+  margin: 0 45px;
+  position: absolute;
+  top: 0;
+}
+
+.infiniteCarousel ul a img {
+  border: 5px solid #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.infiniteCarousel .wrapper ul {
+  width: 9999px;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: absolute;
+  top: 0;
+}
+
+.infiniteCarousel ul li {
+  display:block;
+  float:left;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  height: 143px;
+  width: 201px;
+}
+
+.infiniteCarousel ul li a img {
+  display:block;
+}
+
+.infiniteCarousel .arrow {
+  display: block;
+  height: 51px;
+  width: 51px;
+  background: url('images/arrow-right.png') no-repeat 0 0;
+  text-indent: -999px;
+  position: absolute;
+  top: 37px;
+  cursor: pointer;
+}
+.infiniteCarousel .forward {
+  background-position: 0 0;
+  right: 0;
+}
+
+.infiniteCarousel .back {
+  background: url('images/arrow-left.png');
+  left: 0;
+}
+
+.infiniteCarousel .forward:hover {
+  background-position: 0 2px;
+}
+
+.infiniteCarousel .back:hover {
+  background-position: 0 -2px;
+}
